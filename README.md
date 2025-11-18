@@ -36,8 +36,3 @@ nanofetch
 
 
 <a href="https://ko-fi.com/ciprianbugulet">Cumpara-mi o cafea!</a>
-
-
-
-
-Cumpara-mi o cafea srchttps://ko-fi.com/ciprianbugulet
