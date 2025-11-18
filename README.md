@@ -35,7 +35,9 @@ nanofetch
 <img width="951" height="527" alt="Screenshot_2025-11-18_19-36-42" src="https://github.com/user-attachments/assets/ee6729fe-a32f-4512-b888-1ff0c04b440d" />
 
 
+<a href="https://ko-fi.com/ciprianbugulet">Cumpara-mi o cafea!</a>
 
 
 
-<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#72a4f2', 'Q5Q41MV4ZH');kofiwidget2.draw();</script> 
+
+Cumpara-mi o cafea srchttps://ko-fi.com/ciprianbugulet
