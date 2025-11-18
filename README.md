@@ -34,4 +34,6 @@ nanofetch
 
 <img width="951" height="527" alt="Screenshot_2025-11-18_19-36-42" src="https://github.com/user-attachments/assets/ee6729fe-a32f-4512-b888-1ff0c04b440d" />
 
-<src="https://ko-fi.com/ciprianbugulet"/>
+
+
+https://ko-fi.com/ciprianbugulet
