@@ -18,13 +18,14 @@ Instalare
 Instalarea NanoFetch este rapidă și manuală.
 
 1. Descărcarea Scriptului
+2. 
 wget -O nanofetch https://raw.githubusercontent.com/yourusername/nanofetch/main/nanofetch
-2. Acordarea Permisiunilor
+
+4. Acordarea Permisiunilor
 Faceți scriptul executabil:
 
-Bash
-
 chmod +x nanofetch
+
 3. Instalarea Globală (Opțional)
 Pentru a putea rula NanoFetch de oriunde, mutați-l într-un director din variabila voastră de mediu $PATH:
 
