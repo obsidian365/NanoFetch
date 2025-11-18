@@ -18,17 +18,20 @@ Instalare
 Instalarea NanoFetch este rapidă și manuală.
 
 1. Descărcarea Scriptului
-2. 
-wget -O nanofetch https://raw.githubusercontent.com/yourusername/nanofetch/main/nanofetch
+git clone https://github.com/obsidian365/NanoFetch.git
 
-4. Acordarea Permisiunilor
+2. Acordarea Permisiunilor
 Faceți scriptul executabil:
-
-chmod +x nanofetch
+chmod +x ~/NanoFetch/nanofetch
 
 3. Instalarea Globală (Opțional)
 Pentru a putea rula NanoFetch de oriunde, mutați-l într-un director din variabila voastră de mediu $PATH:
+sudo mv ~/NanoFetch/nanofetch /usr/local/bin/
 
-Bash
+Utilizare
+Rulați comanda simplă în terminal:
+nanofetch
 
-sudo mv nanofetch /usr/local/bin/
+<img width="951" height="527" alt="Screenshot_2025-11-18_19-36-42" src="https://github.com/user-attachments/assets/ee6729fe-a32f-4512-b888-1ff0c04b440d" />
+
+<src="https://ko-fi.com/ciprianbugulet"/>
