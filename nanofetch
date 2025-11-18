@@ -1,0 +1,79 @@
+#!/bin/bash
+
+# ===============================================
+# NanoFetch - Un fetcher Bash extrem de simplu
+# 1.0.0 - versiune
+# Bugulet Ciprian-Dumitru - autor
+# https://ciprianbugulet.blogspot.com/ - web
+# bugulet.ciprian@gmail.com - mail
+# ===============================================
+
+# Coduri de culoare ANSI pentru lizibilitate
+CYAN='\e[36m'
+YELLOW='\e[33m'
+NC='\e[0m' # Resetare
+
+# Functie ajutatoare pentru afisare
+print_info() {
+    local label=$1
+    local value=$2
+    # Afișează eticheta în CYAN și valoarea în YELLOW, cu aliniere simplă
+    printf "${CYAN}%-10s${NC} ${YELLOW}%s${NC}\n" "$label:" "$value"
+}
+
+# Functii pentru extragerea datelor
+
+get_os() {
+    # Încearcă să extragă numele din /etc/os-release
+    if [ -f /etc/os-release ]; then
+        grep PRETTY_NAME /etc/os-release | head -n 1 | cut -d'=' -f2 | tr -d '"'
+    else
+        echo "Linux Generic"
+    fi
+}
+
+get_kernel() {
+    uname -r
+}
+
+get_uptime() {
+    uptime -p | sed 's/up //g'
+}
+
+get_cpu() {
+    # Extrage modelul de CPU
+    grep 'model name' /proc/cpuinfo | head -n 1 | awk -F': ' '{print $2}' | sed 's/ (R)//g; s/ (TM)//g'
+}
+
+get_memory() {
+    # Calculează Memoria Totală și Memoria Utilizată (Total - Disponibil)
+    local total_mem=$(awk '/MemTotal/ {printf "%.0f", $2/1024/1024}' /proc/meminfo)
+    local avail_mem=$(awk '/MemAvailable/ {printf "%.0f", $2/1024/1024}' /proc/meminfo)
+    local used_calc=$((total_mem - avail_mem))
+    echo "${used_calc}G / ${total_mem}G"
+}
+
+get_disk() {
+    # Extrage spațiul folosit și total pentru directorul rădăcină (/)
+    # Folosește 'df -h' pentru format citibil și 'awk' pentru a selecta liniile și coloanele necesare
+    df -h / | awk 'NR==2 {print $3 " / " $2 " (" $5 " utilizat)"}'
+}
+
+# Functia principala
+main() {
+    echo # Linie goală de start
+
+    # Afișează informațiile
+    print_info "User" "$(whoami)@$(hostname)"
+    print_info "OS" "$(get_os)"
+    print_info "Kernel" "$(get_kernel)"
+    print_info "Uptime" "$(get_uptime)"
+    print_info "CPU" "$(get_cpu)"
+    print_info "Memory" "$(get_memory)"
+    print_info "Disk" "$(get_disk)"
+    
+    echo # Linie goală de final
+}
+
+# Rularea scriptului
+main
