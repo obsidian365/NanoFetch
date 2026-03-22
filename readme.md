@@ -16,17 +16,27 @@ Universal: Detectează pachetele pentru majoritatea distribuțiilor (Arch, Debia
 Informativ: Afișează IP-ul local, Kernel-ul, Uptime-ul și încărcarea procesorului (Load).
 
 ***Instalare
+
 Clonează repository-ul:
+
 git clone https://github.com/obsidian365/NanoFetch.git
+
 cd nanofetch
+
 sudo ./install.sh
 
+
 ***Utilizare
+
 Pur si simplu tastati in terminal
+
 nanofetch
 
+
 ***Dezinstalare
+
 sudo ./uninstall.sh
+
 
 Autor: Bugulet Ciprian-Dumitru
 
