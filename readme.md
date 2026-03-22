@@ -1,11 +1,11 @@
 <img width="641" height="224" alt="nanofetch_logo2" src="https://github.com/user-attachments/assets/f77473b6-708e-473f-b183-81cb0d9fee5c" />
 
 
-NanoFetch 2.0.0
+***NanoFetch 2.0.0
 
 NanoFetch este un script Bash minimalist și rapid, conceput pentru a afișa informații esențiale despre sistem direct în terminal, însoțite de un logo ASCII elegant și bare de progres pentru resurse.
 
-Caracteristici
+***Caracteristici
 
 Rapiditate: Colectează datele direct din /proc și /etc/os-release.
 
@@ -15,29 +15,17 @@ Universal: Detectează pachetele pentru majoritatea distribuțiilor (Arch, Debia
 
 Informativ: Afișează IP-ul local, Kernel-ul, Uptime-ul și încărcarea procesorului (Load).
 
-Demo
-    _  _   __   _  _   __  
-   | \| | /__\ | \| | /  \ 
-   | .  |/    \| .  || () |
-   |_|\_|\_/\_/|_|\_| \__/ 
-  nanofetch 2.0.0  •  22.03.2026 12:00
-  ------------------------------------------
-  User           user@linux-host
-  OS             Ubuntu 24.04 LTS
-  Kernel         6.8.0-generic [x86_64]
-  RAM:           ████░░░░░░░░░░░░ 25%
-
-Instalare
+***Instalare
 Clonează repository-ul:
 git clone https://github.com/obsidian365/NanoFetch.git
 cd nanofetch
 sudo ./install.sh
 
-Utilizare
+***Utilizare
 Pur si simplu tastati in terminal
 nanofetch
 
-Dezinstalare
+***Dezinstalare
 sudo ./uninstall.sh
 
 Autor: Bugulet Ciprian-Dumitru
