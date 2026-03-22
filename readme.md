@@ -38,9 +38,9 @@ nanofetch
 sudo ./uninstall.sh
 
 
-Autor: Bugulet Ciprian-Dumitru
+<img width="432" height="526" alt="image" src="https://github.com/user-attachments/assets/e16574e9-1a09-4a20-9853-bd1d2c2cc7f9" />
 
-<img width="951" height="527" alt="Screenshot_2025-11-18_19-36-42" src="https://github.com/user-attachments/assets/ee6729fe-a32f-4512-b888-1ff0c04b440d" />
+Autor: Bugulet Ciprian-Dumitru
 
 <a href="https://ko-fi.com/ciprianbugulet">Cumpara-mi o cafea!</a>
 
